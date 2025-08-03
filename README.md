@@ -25,8 +25,8 @@ This repository contains my Linux configuration files (dotfiles) and a backup of
 1. Clone this repo:
 
    ```bash
-   git clone git@github.com:yourusername/arch-linux-dotfiles.git ~/.dotfiles
-   cd ~/.dotfiles
+   git clone git@github.com:yourusername/arch-linux-dotfiles.git ~/.arch-linux-dotfiles
+   cd ~/.arch-linux-dotfiles
    ```
 
 2. Run the bootstrap script to restore packages and config files:
