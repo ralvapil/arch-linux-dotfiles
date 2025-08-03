@@ -1,0 +1,8 @@
+# pack-refs with: peeled fully-peeled sorted 
+4e7e6642a6a5b76c0dbb0e86748fcb12b4c95012 refs/remotes/origin/before-2024-rewrite
+5f3310d942e931612643eff0ed2db5f49023c8f8 refs/remotes/origin/master
+d49c9d8a3994c7cee0af36cf6145ae465fd4ebe4 refs/remotes/origin/pr-fix-which-key-cleanup
+603f04c7d82cbeb795e6d3c0d76ad2b37b4e6375 refs/remotes/origin/pr-misc
+d17289318a358cfebf62f6c6a170b9833f190f30 refs/remotes/origin/rewrite-2024
+9fb3891d63e2a34bd63f3ee76ad00c4c20832937 refs/remotes/origin/stable
+a8f539562a8c5d822dd5c0ca1803d963c60ad544 refs/remotes/origin/upstream

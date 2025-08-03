@@ -1,0 +1,16 @@
+font-family = "FiraCode Nerd Font Mono"
+font-size = 13
+
+window-padding-x = 16
+window-padding-y = 8
+
+theme = "Dracula+"
+background = "#181818"
+background-opacity = 0.8
+background-blur = true
+bold-is-bright = true
+font-thicken = true
+
+gtk-titlebar = false
+
+
