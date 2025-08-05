@@ -67,6 +67,9 @@ return {
             require('telescope.themes').get_dropdown(),
           },
         },
+        defaults = {
+          file_ignore_patterns = { 'target/', 'node_modules/' },
+        },
       }
 
       -- Enable Telescope extensions if they are installed

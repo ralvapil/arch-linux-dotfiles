@@ -6,6 +6,10 @@ alias e=eza
 alias v=nvim
 alias z=zellij -l welcome
 alias lg=lazygit
+alias img=swayimg
+alias cat=bat
+
+alias waybar-reload='pkill waybar && hyprctl dispatch exec waybar'
 
 # Find orphan packages and remove them
 alias pm-remove-orphas='pacman -Qdtq | pacman -Rns -'
