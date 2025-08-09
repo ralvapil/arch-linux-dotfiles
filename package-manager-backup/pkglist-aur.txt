@@ -1,3 +1,10 @@
 1password
+greenclip
+haskell-semigroups
+haskell-wordexp
+plex-desktop
+protonup-qt
+python-inputs
+python-steam
+python-vdf
 spotify
-starship
