@@ -27,6 +27,7 @@ dmenu
 dmidecode
 dmraid
 dnsmasq
+dnsperf
 dosfstools
 downgrade
 dracut
@@ -67,6 +68,7 @@ glances
 greetd
 grim
 grub
+grub-btrfs
 gsfonts
 gst-libav
 gst-plugin-pipewire
@@ -171,6 +173,7 @@ python-pyqt5
 python-pyqt6
 python-reportlab
 qt5-wayland
+rate-mirrors
 rebuild-detector
 reflector
 reflector-simple
@@ -179,9 +182,12 @@ rsync
 rtkit
 sane
 sg3_utils
+sl
 slurp
 smartmontools
 s-nail
+snap-pac
+snapper
 sof-firmware
 splix
 spotify-player
