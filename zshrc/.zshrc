@@ -9,7 +9,7 @@ alias lg=lazygit
 alias img=swayimg
 alias cat=bat
 
-alias waybar-reload='pkill waybar && hyprctl dispatch exec waybar'
+alias waybar-reload='pkill waybar && niri msg action spawn -- waybar'
 
 # Find orphan packages and remove them
 alias pm-remove-orphas='pacman -Qdtq | pacman -Rns -'
