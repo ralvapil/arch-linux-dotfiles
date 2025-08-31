@@ -2,11 +2,13 @@ export ZSH="$HOME/.oh-my-zsh"
 
 plugins=(git zsh-autosuggestions)
 
+export DXVK_CONFIG_FILE=/home/ram/.config/dxvk.conf
+
 alias e=eza
 alias v=nvim
 alias z=zellij -l welcome
 alias lg=lazygit
-alias img=swayimg
+alias img='swayimg --slideshow'
 alias cat=bat
 
 alias waybar-reload='pkill waybar && niri msg action spawn -- waybar'
