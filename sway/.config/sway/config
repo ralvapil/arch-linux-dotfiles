@@ -50,7 +50,7 @@ exec --no-startup-id dex --autostart --environment i3
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
-exec --no-startup-id hypridle
+exec swayidle -w timeout 120 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
 exec --no-startup-id /usr/bin/lxqt-policykit-agent
 exec ghostty
 exec firefox
@@ -122,7 +122,7 @@ bindsym $mod+Shift+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+e layout toggle split, mark stacking_mode
 
 # app launcher
 bindsym Control+space exec fuzzel
@@ -140,7 +140,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 focus_wrapping none
 
-client.focused #0000ff #48facb #ffffff 
+# pseudo-lock command
+bindsym Control+Mod1+l exec ~/.local/bin/monitor-snooze
+
+# styling border
+client.focused #0000ff #48facb #ffffff
 default_border pixel 3
 
 # Define names for default workspaces for which we configure key bindings later on.
