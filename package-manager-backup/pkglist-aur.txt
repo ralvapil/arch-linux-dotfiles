@@ -1,10 +1,14 @@
 1password
+gputest
 greenclip
 haskell-semigroups
 haskell-wordexp
+nomachine
 plex-desktop
 protonup-qt
 python-inputs
 python-steam
 python-vdf
+scenefx0.4
 spotify
+swayfx
