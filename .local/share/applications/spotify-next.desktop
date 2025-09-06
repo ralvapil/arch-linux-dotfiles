@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Spotify: Next
+Exec=playerctl --player=spotify next
+Icon=media-skip-forward
+Terminal=false
+Type=Application
+Categories=Utility;
+

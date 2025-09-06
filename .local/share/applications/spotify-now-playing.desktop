@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Spotify: Now Playing
+Exec=sh -c "playerctl metadata --format '{{ artist }} - {{ title }}' | fuzzel"
+Icon=media-playback-start
+Terminal=false
+Type=Application
+Categories=Utility;
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DRAGON QUEST XI S: Echoes of an Elusive Age - Definitive Edition DEMO
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1295550
+Icon=steam_icon_1295550
+Terminal=false
+Type=Application
+Categories=Game;

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CHOICE=$(printf "Play/Pause\nNext\nPrevious\nStop\nStatus" | wofi --dmenu --prompt "Spotify Control")
+
+case "$CHOICE" in
+  "Play/Pause") playerctl play-pause ;;
+  "Next") playerctl next ;;
+  "Previous") playerctl previous ;;
+  "Stop") playerctl stop ;;
+  "Status") playerctl metadata --format '{{ artist }} - {{ title }}' | wofi --show dmenu ;;
+esac
+
