@@ -135,8 +135,6 @@ nss-mdns
 ntfs-3g
 ntp
 nvidia
-nvidia-hook
-nvidia-inst
 nvidia-lts
 nvidia-settings
 nvtop
@@ -178,7 +176,6 @@ qt5-wayland
 rate-mirrors
 rebuild-detector
 reflector
-reflector-simple
 rofi
 rsync
 rtkit
@@ -211,7 +208,6 @@ tailscale
 texinfo
 thunar
 thunar-volman
-tldr
 ttf-0xproto-nerd
 ttf-3270-nerd
 ttf-agave-nerd
@@ -280,7 +276,6 @@ vi
 vlc
 vlc-plugins-all
 waybar
-welcome
 wget
 which
 wireplumber
