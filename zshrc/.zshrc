@@ -3,13 +3,30 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 
 export DXVK_CONFIG_FILE=/home/ram/.config/dxvk.conf
+export HS2_DIR=/home/ram/Games/Lutris/HS2/drive_c/Program\ Files\ \(x86\)/hs2
+
+unzip_to_folders() {
+    for f in "$@"; do
+        dir="${f%.zip}"
+        mkdir -p "$dir"
+        unzip -d "$dir" "$f"
+    done
+}
 
 alias e=eza
 alias v=nvim
 alias z=zellij -l welcome
 alias lg=lazygit
-alias img='swayimg --slideshow'
+alias img='feh -F -Z --draw-filename -D 0'
+alias imglist='feh --thumbnails'
 alias cat=bat
+alias shutdown='sudo systemctl poweroff'
+alias mnt-cryptomator='cryptomator-cli unlock \
+--password:stdin \
+--mounter=org.cryptomator.frontend.fuse.mount.LinuxFuseMountProvider \
+--mountPoint=/mnt/personal_documents \
+/home/ram/gdrive/Personal\ Documents/'
+alias ff=firefox
 
 alias waybar-reload='pkill waybar && niri msg action spawn -- waybar'
 
