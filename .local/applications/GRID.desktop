@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GRID
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/12750
+Icon=steam_icon_12750
+Terminal=false
+Type=Application
+Categories=Game;

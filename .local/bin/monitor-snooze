@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# Start swayidle in background
-swayidle -w \
-    timeout 1 'swaymsg "output * dpms off"' \
-    resume 'swaymsg "output * dpms on"; [ -f /tmp/stepaway.pid ] && kill $(cat /tmp/stepaway.pid) && rm /tmp/stepaway.pid' &
-
-# Save the PID of the swayidle process to a temp file
-echo $! > /tmp/stepaway.pid
