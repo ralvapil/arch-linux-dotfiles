@@ -36,13 +36,13 @@ for_window [app_id="com.mitchellh.ghostty"] {
     # shadows_enable true;
 }
 
-# for_window [app_id="com.mitchellh.ghostty"] floating enable, move position center, move scratchpad, resize set 80ppt 60ppt
+for_window [app_id="com.mitchellh.ghostty"] floating enable, move position center, move scratchpad, resize set 80ppt 60ppt
 
-bindsym $mod+grave scratchpad show
-# bindsym $mod+grave exec sh -c 'swaymsg scratchpad show && swaymsg "[app_id=\"com.mitchellh.ghostty\"] resize set 60ppt 85ppt"'
+# bindsym $mod+grave scratchpad show
+bindsym $mod+grave exec sh -c 'swaymsg scratchpad show && swaymsg "[app_id=\"com.mitchellh.ghostty\"] resize set 60ppt 85ppt"'
 
 # Move the focused window to the scratchpad
-# bindsym $mod+Shift+t move scratchpad
+bindsym $mod+Shift+t move scratchpad
 
 # Show/hide the scratchpad window
 bindsym $mod+t exec ghostty
@@ -57,20 +57,16 @@ exec --no-startup-id dex --autostart --environment i3
 # they are included here as an example. Modify as you see fit.
 
 exec swayidle -w timeout 120 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
-exec sway-audio-idle-inhibit
 exec --no-startup-id /usr/bin/lxqt-policykit-agent
-exec_always ~/.config/sway/start-floating-ghostty.sh
+exec ghostty
 exec firefox
 exec steam
 exec discord
-exec spotify & sleep 3 && swaymsg '[class="Spotify"] resize set 33ppt 100ppt'
-exec_always --no-startup-id udiskie -ta &
-for_window [title="^Friends List"] resize set 10ppt 100ppt
+exec spotify
 
 # All steam games should open on workspace 3
 assign [class="^steam_app.*"] 3
 assign [instance="^steam_app.*"] 3
-# assign [title="^Friends List"] 4
 
 # Specific applications to specific workspaces
 assign [app_id="com.mitchellh.ghostty"] 1
@@ -102,6 +98,9 @@ floating_modifier $mod
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 # tiling_drag modifier titlebar
+
+# start a terminal
+bindsym $mod+x exec ghostty
 
 # start firefox
 bindsym $mod+f exec firefox
