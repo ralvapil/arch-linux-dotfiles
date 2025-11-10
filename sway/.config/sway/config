@@ -1,4 +1,4 @@
-#
+include /etc/sway/config.d/*
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
@@ -62,7 +62,7 @@ exec --no-startup-id /usr/bin/lxqt-policykit-agent
 exec_always ~/.config/sway/start-floating-ghostty.sh
 exec firefox
 exec steam
-exec discord
+exec discord & sleep 3 && swaymsg '[class="discord"] resize set 33ppt 100ppt'
 exec spotify & sleep 3 && swaymsg '[class="Spotify"] resize set 33ppt 100ppt'
 exec_always --no-startup-id udiskie -ta &
 for_window [title="^Friends List"] resize set 10ppt 100ppt
@@ -78,6 +78,7 @@ assign [app_id="firefox"] 1
 assign [class="steam"] 2
 assign [class="discord"] 2
 assign [class="Spotify"] 1
+assign [app_id="net.lutris.lutris"] 3
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
