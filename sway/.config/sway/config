@@ -64,6 +64,7 @@ exec firefox
 exec steam
 exec discord & sleep 3 && swaymsg '[class="discord"] resize set 33ppt 100ppt'
 exec spotify & sleep 3 && swaymsg '[class="Spotify"] resize set 33ppt 100ppt'
+exec_always easyeffects --gapplication-service
 exec_always --no-startup-id udiskie -ta &
 for_window [title="^Friends List"] resize set 10ppt 100ppt
 
@@ -73,7 +74,7 @@ assign [instance="^steam_app.*"] 3
 # assign [title="^Friends List"] 4
 
 # Specific applications to specific workspaces
-assign [app_id="com.mitchellh.ghostty"] 1
+# assign [app_id="com.mitchellh.ghostty"] 1
 assign [app_id="firefox"] 1
 assign [class="steam"] 2
 assign [class="discord"] 2
@@ -158,6 +159,11 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# screenshots
+bindsym Mod1+Shift+4 exec grim -g "$(slurp)" ~/Pictures/screenshot_$(date +%s).png
+# open last screenshot
+bindsym Mod1+Shift+End exec sh -c 'xdg-open "$(ls -t ~/Pictures/screenshot_*.png | head -1)"'
 
 # focus the child container
 #bindsym $mod+d focus child

@@ -5,6 +5,7 @@ clang
 dunst
 discord
 eza
+easyeffects
 feh
 firefox
 fuzzel

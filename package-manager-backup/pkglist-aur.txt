@@ -3,7 +3,7 @@ gputest
 greenclip
 haskell-semigroups
 haskell-wordexp
-nomachine
+nap-bin
 plex-desktop
 protonup-qt
 python-inputs

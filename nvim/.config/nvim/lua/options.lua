@@ -63,4 +63,6 @@ vim.opt.scrolloff = 10
 
 vim.diagnostic.config { virtual_text = true }
 
+vim.o.scroll = 5
+
 -- vim: ts=2 sts=2 sw=2 et
